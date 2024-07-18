@@ -27,8 +27,8 @@ docker compose up
 '''
 
 ### Manipulando o banco de dados no contâiner
-'''
+´´´
 sudo docker exec -it dsw1-db-1 "bash"
 bash5.1# mysql -p // Senha: root
 mysql> USE SiteConsulta;
-'''
+´´´

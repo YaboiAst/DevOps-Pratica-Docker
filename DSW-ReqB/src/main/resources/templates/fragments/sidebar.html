@@ -38,12 +38,12 @@
         </ul>
     </div>
 
-    <div sec:authorize="hasRole('ROLE_ADMIN')">
+    <div>
         <ul class="nav nav-pills">
             <li class="nav-item">
                 <span class="nav-link active" th:text="#{sidebar.titulo.pacientes}"></span>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" sec:authorize="hasRole('ROLE_ADMIN')">
                 <a class="nav-link" th:href="@{/pacientes/cadastrar}">
                     <i class="oi oi-plus"></i>
                     <span th:text="#{sidebar.link.cadastrar}"></span>
@@ -58,12 +58,12 @@
         </ul>
     </div>
 
-    <div sec:authorize="hasRole('ROLE_ADMIN')">
+    <div>
         <ul class="nav nav-pills">
             <li class="nav-item">
                 <span class="nav-link active" th:text="#{sidebar.titulo.medicos}"></span>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" sec:authorize="hasRole('ROLE_ADMIN')">
                 <a class="nav-link" th:href="@{/medicos/cadastrar}">
                     <i class="oi oi-plus"></i>
                     <span th:text="#{sidebar.link.cadastrar}"></span>

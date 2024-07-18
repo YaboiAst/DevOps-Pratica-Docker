@@ -18,17 +18,17 @@ Imagem do banco de dados SQL para admnistrar a permanência de dados;
 ## Como usar
 1. Clone o repositório
 2. Compile o sistema site-consultas
-'''
+```
 mvn package
-'''
+```
 3. Na pasta raiz do repositório, execute o docker compose
-'''
+```
 docker compose up
-'''
+```
 
 ### Manipulando o banco de dados no contâiner
-´´´
+```
 sudo docker exec -it dsw1-db-1 "bash"
 bash5.1# mysql -p // Senha: root
 mysql> USE SiteConsulta;
-´´´
+```
